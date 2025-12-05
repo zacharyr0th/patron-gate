@@ -1,6 +1,12 @@
+<p align="center">
+  <img src="apps/web/public/logo.png" alt="PatronGate Logo" width="200">
+</p>
+
 # PatronGate
 
 Membership and content monetization platform built on [Aptos](https://aptos.dev) with decentralized storage via [Shelby Protocol](https://shelby.dev).
+
+![PatronGate Screenshot](apps/web/public/pg.png)
 
 ## Overview
 
