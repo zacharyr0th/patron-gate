@@ -1,0 +1,35 @@
+{
+  "name": "patrongate-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:web": "turbo dev --filter=@repo/web",
+    "build": "turbo build",
+    "build:web": "turbo build --filter=@repo/web",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint -- --write",
+    "format": "biome format --write .",
+    "format:check": "biome check .",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "clean": "rm -rf node_modules .turbo **/node_modules **/.turbo apps/*/.next apps/*/dist packages/*/dist contracts/build bun.lockb",
+    "clean:cache": "rm -rf .turbo **/node_modules/.cache apps/*/.next/cache",
+    "clean:install": "bun run clean && bun install",
+    "contract:compile": "cd contracts && aptos move compile",
+    "contract:test": "cd contracts && aptos move test",
+    "contract:deploy": "contracts/deploy.sh",
+    "contract:deploy:mainnet": "contracts/deploy.sh mainnet"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/minimatch": "^6.0.0",
+    "turbo": "^2.3.0"
+  },
+  "packageManager": "bun@1.1.38",
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  }
+}

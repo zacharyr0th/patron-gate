@@ -1,0 +1,120 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Turborepo
+.turbo/
+**/.turbo/*.log
+
+# Production
+/build
+
+# Environment variables
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Bun
+# Note: bun.lockb should be committed (like package-lock.json)
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Claude Code Configuration
+# User-specific settings (keep settings.json template)
+.claude/settings.local.json
+
+# Cached documentation (keep only project-relevant docs)
+.claude/docs/claude/
+.claude/docs/coinbase/x402-github/
+.claude/docs/squads/
+
+# Claude Code backups
+.claude.backup/
+.claude.backup.*
+backup-*/
+
+# Claude Code cache and logs
+.claude/**/.cache/
+.claude/**/*.log
+
+# Zig build artifacts (for TOON format tools)
+.zig-cache/
+zig-cache/
+
+# Project tracking files (temporary reports)
+AUDIT.md
+COMPLETION_REPORT.md
+*_REPORT.md
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Error screenshots
+error-*.png
+
+# Development utility scripts (should be in scripts/ directory)
+/*-cli.ts
+/auto-*.ts
+/check-*.ts
+/monitor-*.ts
+/send-*.ts
+/fund-*.ts
+
+# AI/ML
+*.pkl
+*.h5
+*.hdf5
+models/
+checkpoints/

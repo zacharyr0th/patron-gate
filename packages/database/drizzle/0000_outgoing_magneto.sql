@@ -1,0 +1,23 @@
+CREATE TABLE "content" (
+	"id" text PRIMARY KEY NOT NULL,
+	"creator_id" text NOT NULL,
+	"creator_wallet" text NOT NULL,
+	"title" text NOT NULL,
+	"description" text,
+	"content_type" text NOT NULL,
+	"file_size" integer NOT NULL,
+	"duration" integer,
+	"shelby_cid" text NOT NULL,
+	"shelby_chunkset_id" text,
+	"session_id_used_for_upload" text,
+	"zora_nft_address" text,
+	"zora_url" text,
+	"stream_price" text NOT NULL,
+	"purchase_price" text NOT NULL,
+	"stream_count" integer DEFAULT 0 NOT NULL,
+	"purchase_count" integer DEFAULT 0 NOT NULL,
+	"total_revenue" text DEFAULT '0' NOT NULL,
+	"uploaded_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp DEFAULT now() NOT NULL,
+	"thumbnail_url" text
+);

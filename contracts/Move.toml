@@ -1,0 +1,22 @@
+[package]
+name = "patrongate"
+version = "1.0.0"
+authors = ["PatronGate Team"]
+
+[addresses]
+patrongate = "0xd6d6cd1e24213702d13504c50f4782aa1a83fc7c0c6c9417bac50a3d05d110bd"
+
+[dev-addresses]
+patrongate = "0xCAFE"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-stdlib"
+
+[dev-dependencies]

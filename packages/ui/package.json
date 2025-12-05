@@ -1,0 +1,39 @@
+{
+  "name": "@repo/ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./header": "./src/header.tsx",
+    "./footer": "./src/footer.tsx",
+    "./providers": "./src/providers.tsx"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aptos-labs/wallet-adapter-react": "^7.2.2",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-icons": "^1.3.2",
+    "@tanstack/react-query": "^5.90.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.553.0",
+    "media-chrome": "^4.15.1",
+    "next-themes": "^0.4.6",
+    "petra-plugin-wallet-adapter": "^0.4.5",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.2",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

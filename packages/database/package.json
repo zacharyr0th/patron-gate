@@ -1,0 +1,32 @@
+{
+  "name": "@repo/database",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./drizzle-schema": "./src/drizzle-schema.ts",
+    "./types": "./src/types.ts",
+    "./services/*": "./src/services/*.ts",
+    "./client": "./src/client.ts",
+    "./drizzle-config": "./drizzle.config.ts"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "drizzle-orm": "^0.44.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "drizzle-kit": "^0.31.7",
+    "typescript": "^5.7.2"
+  }
+}
